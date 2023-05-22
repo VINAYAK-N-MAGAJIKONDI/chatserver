@@ -1,7 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from bardapi import core as bard
 
 app = Flask(__name__)
+CORS(app)
+
 app.config['JSON_SORT_KEYS'] = False
 
 token = 'WQgjUQ5kvoFes5Vls82gwQPLeZ2p2hpQpv6x3TL2fPVVKRlXNoguWijrTnlfeTcWduQjlQ.'
@@ -14,3 +17,9 @@ def get_answer():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+
+
+
+

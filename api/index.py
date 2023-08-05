@@ -26,7 +26,7 @@ app = Flask(__name__)
 CORS(app)
 app.config['JSON_SORT_KEYS'] = False
 
-token = 'WQgjUQ5kvoFes5Vls82gwQPLeZ2p2hpQpv6x3TL2fPVVKRlXNoguWijrTnlfeTcWduQjlQ.'
+token = 'ZQgjUcISkqAXa_bUUzzdL1t9JXGGWqDI2c2g5YI84Yf6AAAWijATjJLGhXlzwR0ld4hp4g.'
 
 @app.route('/get_answer', methods=['POST'])
 def get_answer():
